@@ -1,4 +1,4 @@
-name: MLflow_project
+name: Mlflow_project
 
 conda_env: conda.yaml
 
