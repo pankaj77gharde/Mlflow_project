@@ -1,0 +1,11 @@
+name: Mlflow_project
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_estimators: {type: int, default: 100}
+      max_depth: {type: int, default: 7}
+      min_samples_leaf: {type: int, default: 5}
+    command: "python test.py {n_estimators} {max_depth} {min_samples_leaf}"
